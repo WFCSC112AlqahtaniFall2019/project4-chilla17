@@ -58,7 +58,7 @@ int main() {
         while (!game.checkForWin() && !game.isBoardFull()) {
             // user turn = Player 1
             if (game.getCurrentPlayerNumber() == 1) {
-                cout << "Player: " << game.getCurrentPlayerNumber() << endl;
+                cout << "Player: 1" << endl;
                 cout << "Enter row and column: ";
                 cin >> row >> col;
                 if (row > 3 || row < 1 || col > 3 || col < 1) { // if statement checks to see that the user row and col are within range
@@ -72,7 +72,7 @@ int main() {
             }
             // computer turn = Player 2
             else {
-                cout << "Player: " << game.getCurrentPlayerNumber() << endl;
+                cout << "Player: 2"  << endl;
                 cout << "Enter row and column: ";
                 row = rand() % 3 + 1;
                 col = rand() % 3 + 1;
